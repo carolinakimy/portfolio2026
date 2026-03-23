@@ -535,19 +535,56 @@
   }
 
   /* ── RESPONSIVE ── */
+
+  /* Tablet */
   @media (max-width: 860px) {
     nav { padding: 14px 24px; }
     .nav-links { display: none; }
     section { padding: 72px 24px; }
     .hero { padding: 100px 24px 60px; }
     .hero::before { width: 100%; }
-    .hero-inner { grid-template-columns: 1fr; gap: 48px; }
-    .hero-stats { flex-direction: row; }
+    .hero-inner { grid-template-columns: 1fr; gap: 40px; }
+    .hero-stats { flex-direction: column; gap: 16px; }
+    .stat-num { font-size: 36px; }
     .sobre-grid, .personal-grid { grid-template-columns: 1fr; gap: 40px; }
+    .match-grid { grid-template-columns: repeat(2, 1fr); }
+    .clientes-grid { grid-template-columns: 1fr; }
     .ig-destaque { grid-template-columns: repeat(2, 1fr); }
     .ig-metrics { grid-template-columns: repeat(2, 1fr); }
     .strategy-grid { grid-template-columns: 1fr; }
     .skills-grid { grid-template-columns: repeat(2, 1fr); }
+    .section-title { font-size: 28px; }
+    .hero h1 { font-size: 38px; }
+    .book-visual { max-width: 260px; }
+  }
+
+  /* iPhone (small screens) */
+  @media (max-width: 480px) {
+    nav { padding: 12px 16px; }
+    section { padding: 56px 16px; }
+    .hero { padding: 90px 16px 48px; }
+    .hero h1 { font-size: 30px; }
+    .hero-sub { font-size: 14px; }
+    .hero-tag { font-size: 10px; padding: 5px 12px; }
+    .hero-photo { width: 120px; height: 120px; }
+    .stat-card { padding: 20px 24px; }
+    .stat-num { font-size: 32px; }
+    .stat-label { font-size: 12px; }
+    .section-title { font-size: 24px; }
+    .section-tag { font-size: 10px; }
+    .sobre-quote { font-size: 18px; }
+    .match-grid { grid-template-columns: 1fr; }
+    .match-card { padding: 24px 20px; }
+    .ig-destaque { grid-template-columns: 1fr; }
+    .ig-metrics { grid-template-columns: 1fr; }
+    .ig-metric-num { font-size: 28px; }
+    .skills-grid { grid-template-columns: 1fr; }
+    .contato-links { flex-direction: column; align-items: center; }
+    .contato-link { width: 100%; justify-content: center; }
+    .exp-item { padding-left: 28px; }
+    .pill-grid { gap: 8px; }
+    .pill { font-size: 11px; padding: 5px 12px; }
+    .book-visual { max-width: 220px; }
   }
 </style>
 </head>
